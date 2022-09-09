@@ -4,9 +4,10 @@
 body {
 background-color: #0f0022;
 }
-.begginintext { 
-    color:white;
-    font-family: 'thefunny', "airlocke";
+.mename {
+  font-family: 'thefunny', airlocke, sans-serif;
+  font-style:normal;
+  font-weight:normal;
 }
 .lecription { 
     color:white;
