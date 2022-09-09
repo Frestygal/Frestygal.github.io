@@ -6,11 +6,11 @@ background-color: #0f0022;
 }
 .begginintext { 
     color:white;
-    font-family: 'thefunny', airlocke;
+    font-family: 'thefunny', "airlocke";
 }
 .lecription { 
     color:white;
-    font-family: 'Comic Sans MS';
+    font-family: "Comic Sans MS", "Comic Sans";
 }
 .videostable {
   border-collapse: separate;
