@@ -4,11 +4,23 @@
 body {
 background-color: #0f0022;
 }
-.wip { 
+.begginintext { 
     color:white;
-    font-family: "Comic Sans MS", "Comic Sans";
-} 
-
+    font-family: 'thefunny', airlocke;
+}
+.lecription { 
+    color:white;
+    font-family: 'Comic Sans MS';
+}
+.videostable {
+  border-collapse: separate;
+  border-spacing: 10 0;
+}
+hr{
+  background-color: #ffcd00;
+  border: none;
+  height: 4px;
+}
 
 
 
