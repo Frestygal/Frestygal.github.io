@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+:root {
+  --hover-color: #ff9e00;
+  --light-color: #ffc799;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background: #200e34;
+}
+
+a {
+  text-decoration: none;
+  color: #818181;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* linkbar */
+.linkbar {
+  background: #110b1f;
+  padding: 10px;
+}
+
+.linkbar .container {
+  display: flex;
+}
+
+.linkbar .links a {
+  display: flex;
+}
+
+.linkbar a {
+  padding: 15px 20px;
+  display: block;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.linkbar a:hover {
+  forced-color-adjust: var(--hover-color);
+}
+
+/* .links img {
+  max-width: 50%;
+  max-height: 50%;
+} */
+
+/* Utility */
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 13px 20px;
+  background: var(--light-color);
+  color: #333;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.btn:hover {
+  background: var(--hover-color);
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+/*text classes */
+
+.text-xxl {
+  font-size: 3rem;
+  line-height: 1.2;
+  font-weight: 600;
+  margin: 40px 0 20px;
+}
+
+.text-xl {
+  font-size: 2.2rem;
+  line-height: 1.4;
+  font-weight: normal;
+  margin: 40px 0 20px;
+}
+
+.text-lg {
+  font-size: 1.8rem;
+  line-height: 1.4;
+  font-weight: 600;
+  margin: 30px 0 20px;
+}
+
+.text-md {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  font-weight: 600;
+  margin: 20px 0 10px;
+}
+
+.text-sm {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  font-weight: 600;
+  margin: 10px 0 5px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.hero {
+  color: #cfbaf0;
+}
+
+/*
+            to do 
+change the color of the icons for the links
+everything else
+*/
