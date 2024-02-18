@@ -2,8 +2,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 :root {
@@ -42,6 +40,7 @@ img {
 
 .linkbar .container {
   display: flex;
+  justify-content: center; /* Center the container horizontally */
 }
 
 .linkbar .links a {
@@ -49,9 +48,8 @@ img {
 }
 
 .linkbar a {
-  padding: 5px 5px;
+  padding: 4px 4px;
   display: block;
-  font-weight: 600;
   transition: 0.5s;
 }
 
@@ -60,7 +58,7 @@ img {
 }
 
 .linkbar .links {
-  padding: 5px 5px;
+  padding: 7px 7px;
 }
 
 /* Utility (text) */
@@ -133,8 +131,44 @@ img {
   color: #cfbaf0;
   text-align: center;
 }
-/*
-            to do 
-change the color of the icons for the links
-everything else
-*/
+
+/* THIS IS FOR A TOOLTIP BUBBLE */
+/* Copy discord
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: var(--hover-color);
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  top: 120%; 
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+Arrow 
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent var(--hover-color) transparent;
+} */
