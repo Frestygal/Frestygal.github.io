@@ -35,7 +35,7 @@ img {
 /* linkbar */
 .linkbar {
   background: #110b1f;
-  padding: 10px;
+  padding: 15px;
 }
 
 .linkbar .container {
@@ -47,22 +47,21 @@ img {
 }
 
 .linkbar a {
-  padding: 15px 20px;
+  padding: 5px 5px;
   display: block;
   font-weight: 600;
   transition: 0.5s;
 }
 
-.linkbar a:hover {
-  forced-color-adjust: var(--hover-color);
+.linkbar .links a:hover {
+  background: var(--hover-color);
 }
 
-/* .links img {
-  max-width: 50%;
-  max-height: 50%;
-} */
+.linkbar .links {
+  padding: 5px 5px;
+}
 
-/* Utility */
+/* Utility (text) */
 .container {
   margin: 0 auto;
   padding: 0 15px;
@@ -128,14 +127,10 @@ img {
   margin: 10px 0 5px;
 }
 
-.text-center {
-  text-align: center;
-}
-
 .hero {
   color: #cfbaf0;
+  text-align: center;
 }
-
 /*
             to do 
 change the color of the icons for the links
