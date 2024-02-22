@@ -4,19 +4,19 @@ function playSound() {
   var probMeow = 0.9;
 
   if (random < probMeow) {
-    var snd = new Audio("js/meow.wav"); //wav is also supported
-    snd.play(); //plays the sound
+    var snd = new Audio("js/meow.wav");
+    snd.play();
   } else {
-    var snd = new Audio("js/hellnawr.wav"); //wav is also supported
-    snd.play(); //plays the sound
+    var snd = new Audio("js/hellnawr.wav");
+    snd.play();
   }
 }
 
 // THIS IS FOR COPYING SOMETHING TO CLIPBOARD
-// document.getElementById("DSTag").addEventListener("click", function (event) {
-//   event.preventDefault(); // Prevent the default behavior of the link
-//   var DiscordServr = "https://discord.com/invite/RD8KnsVgPP"; // Replace this with your actual Discord tag
-//   copyToClipboard(DiscordServr);
+// document.getElementById("CopySumn").addEventListener("click", function (event) {
+//   event.preventDefault();
+//   var WhattoCopy = "Something";
+//   copyToClipboard(WhattoCopy);
 // });
 
 // function copyToClipboard(text) {
