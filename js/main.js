@@ -1,14 +1,14 @@
 function playSound() {
-  var random = Math.random();
+  var random = Math.random(0.0, 100.0);
+  var probMeow = 99.9;
 
-  var probMeow = 0.9;
+  var sndmeow = new Audio("js/meow.wav");
+  var sndnawr = new Audio("js/hellnawr.wav");
 
   if (random < probMeow) {
-    var snd = new Audio("js/meow.wav");
-    snd.play();
+    sndmeow.play();
   } else {
-    var snd = new Audio("js/hellnawr.wav");
-    snd.play();
+    sndnawr.play();
   }
 }
 
