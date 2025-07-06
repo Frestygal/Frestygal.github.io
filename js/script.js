@@ -142,7 +142,7 @@ window.addEventListener('DOMContentLoaded', () => {
     }, 1500);
 
     // typing effect
-    const olasubtext = "haz click para avanzar...?";
+    const olasubtext = "click to continue...?";
     const olatypetext = document.getElementById("clicktyping");
     let idx = 0;
     olatypetext.textContent = "";
@@ -151,7 +151,7 @@ window.addEventListener('DOMContentLoaded', () => {
         if (idx < olasubtext.length) {
             olatypetext.textContent += olasubtext[idx++];
             const current = olatypetext.textContent;
-            const delay = current.endsWith("avanzar") ? 3000 : 128;
+            const delay = current.endsWith("continue") ? 3000 : 128;
             setTimeout(olatypesub, delay);
         }
     }
