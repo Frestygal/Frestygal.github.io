@@ -1,76 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FrestSite</title>
+<html lang="es">
 
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap");
-    </style>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Gabarito:wght@500&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/fork-awesome/1.2.0/css/fork-awesome.min.css"
-      integrity="sha512-aupidr80M36SeyviA/hZ2uEPnvt2dTJfyjm9y6z1MgaV13TgzmDiFdsH3cvSNG27mRIj7gJ2gNeg1HeySJyE3Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="shortcut icon" href="images/gay.ico" type="image/x-icon" />
-  </head>
-  <body>
-    <nav class="linkbar">
-      <div class="container">
-        <div class="links">
-          <a href="https://www.youtube.com/@frest_68">
-            <img src="images/yt.svg" alt="utub" />
-          </a>
-        </div>
-        <div class="links">
-          <a href="https://www.twitch.com/frestygal">
-            <img src="images/tw.svg" alt="twitch" />
-          </a>
-        </div>
-        <div class="logo">
-          <div class="tooltip">
-            <a href="index.html">
-              <img src="images/mebetter.png" alt="me tbh" />
-            </a>
-            <span class="tooltiptext">Me:3</span>
-          </div>
-        </div>
-        <div class="links">
-          <a href="https://www.twitter.com/@Frest_68">
-            <img src="images/twt.svg" alt="bird" />
-          </a>
-        </div>
-        <div class="links">
-          <a href="https://discord.com/invite/RD8KnsVgPP">
-            <img src="images/ds.svg" alt="ds" />
-          </a>
-        </div>
-      </div>
-    </nav>
-    <!-- body -->
-    <section class="sixeightbody">
-      <div class="container">
-        <div class="sixeightbodycontent">
-          <h1 class="sixeight-heading text-xxl light-text">
-            Welcome goobers to my site:3
-          </h1>
-          <p class="sixeight-text">meowmeowmeowmeow</p>
-          <div class="sixeightmeowbutton">
-            <a onclick="playSound()" class="btn btn-meow">Meow?</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <script src="js/main.js"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/GlslCanvas.js"></script>
+    <script src="js/script.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="images/gay.ico">
+    <title>ola</title>
+</head>
+
+<body class="olabody">
+    <div class="shaderbg">
+        <canvas class="glslCanvas" data-fragment-url="shaders/background.frag"></canvas>
+        <script>
+            const canvas = document.querySelector('.glslCanvas');
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            const sandbox = new GlslCanvas(canvas);
+        </script>
+    </div>
+    <div class="splash" style="visibility: visible;">
+        <h1>ola</h1>
+        <p id="clicktyping">haz click para avanzar</p>
+    </div>
+
+    <div class="evrtelse" style="visibility: visible;">
+        <header>
+            <div id="title" style="visibility: hidden;">
+                <h1>ola</h1>
+            </div>
+            <hr>
+        </header>
+
+        <main>
+            <section id="presentacion">
+                <div class="sectit">
+                    <h1><strong>que soy</strong></h1>
+                </div>
+                <div class="sectxt">
+                    <p>
+                        ola, me llamo eva luna, soy humana, tengo 18 años, vivo en san antonio,
+                        y me gustan los computadores, me gusta lo que puedes hacer con ellos,<br>
+                        me gusta crear cosas, y expresarme con lo que hago, y espero que esta pagina lo desmuestre
+                    </p>
+                    <div class="olawavespan">
+                        <span>o</span><span>l</span><span>a</span>
+                    </div>
+                    <div id="crocwrapfix">
+                        <img id="croc" src="images/croc.png" alt="ola">
+                    </div>
+                </div>
+            </section>
+
+            <section id="gustos">
+                <div class="sectit">
+                    <h1><strong>que hago</strong></h1>
+                </div>
+                <div class="sectxt">
+                    <p>
+                        me gusta jugar con mis amigos, o con personas que ni si quiera conozco,
+                        me gusta dibujar de vez en cuando, me gusta hacer musica, me gusta hacer modelos 3d,
+                        me gusta escribir codigo para los juegos de ritmo, me gusta la mar, me gustas tu
+                    </p>
+                </div>
+                <div class="gallery">
+                    <div class="gallery-buttons">
+                        <button id="prevBtn">←</button>
+                        <button id="nextBtn">→</button>
+                    </div>
+                    <div class="gallery-content">
+                        <img id="lovvidogem" src="images/lovevidogems.jpg" alt="I LOVE VIDEOGAMES">
+                        <img id="frens" src="images/sillly.png" alt="mis amigos">
+                        <img id="wut" src="images/what.jpg" alt="que">
+                        <img id="collec" src="images/wow.jpg" alt="mi coleccion">
+                        <video id="muerte" controls>
+                            <source src="https://files.catbox.moe/lb9tae.mp4" type="video/mp4">
+                        </video>
+                        <video id="notitgg" controls>
+                            <source src="https://files.catbox.moe/bcpaa7.mp4" type="video/mp4">
+                        </video>
+                    </div>
+
+
+                    <div id="zoomOverlay" class="hidden">
+                        <div id="zoomInner"></div>
+                    </div>
+                </div>
+            </section>
+            <footer id="olando">
+                <section id="social">
+                    <div class="sectit">
+                        <h1><strong>que donde</strong></h1>
+                    </div>
+                    <div class="sectxt">
+                        <p>
+                            tengo redes y no se usarlas, aqui estan
+                        </p>
+                    </div>
+                    <div class="links">
+                        <a href="https://www.twitch.tv/frestygal" target="_blank">
+                            <img src="images/tw.svg" alt="ola">
+                        </a>
+                        <a href="https://www.youtube.com/@frest_68" target="_blank">
+                            <img src="images/yt.svg" alt="ola">
+                        </a>
+                        <a href="https://www.twitter.com/frestiestgal" target="_blank">
+                            <img src="images/twt.svg" alt="ola">
+                        </a>
+                        <a href="https://discord.com/invite/RD8KnsVgPP" target="_blank">
+                            <img src="images/ds.svg" alt="ola">
+                        </a>
+                    </div>
+                    <section id="creditos">
+                        <h4>olando desde 2006</h4>
+                        <div class="horcrop">
+
+                            <a href="https://www.youtube.com/watch?v=kwJM1IdjsgM" target="_blank">
+                                <img src="images/horse.gif" alt="ola">
+                            </a>
+                        </div>
+                    </section>
+                </section>
+            </footer>
+        </main>
+    </div>
+</body>
+
 </html>
