@@ -61,7 +61,7 @@ window.addEventListener('DOMContentLoaded', () => {
     window.scrollTo(0, 0);
 
     // title stuff
-    const titles = ["ola", "███", "▒▒▒"];
+    const titles = ["yo", "███", "▒▒▒"];
     document.title = titles[0];
     function flashLoop() {
         let flashIndex = 1;
